@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Checker 1.0</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Lam Pham</a>
+      
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">My Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cardcheck.html">Card Check</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container border border-dark mt-3 rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <h1 class="d-block text-center">Check a Card</h1>
+                    <br>
+                    <p class="text-center">Add a card number in and check if it's real or not!</p> 
+                    <br>
+                    <h3>How do the card checker work?</h3>
+                    <p>The checker ultilizes the Luhn Algorithm to determine if it's a card number or not.</p>
+                    <p>Learn more about the Luhn Algorithm <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">here</a></p>
+                </div>
+                <div class="col-md-8">
+                    <br><br>
+                    <div class="form-group p-3">
+                        <label for="cardname">Card Number (just add in as a row of numbers, with or without spaces)</label>
+                        <input type="text" class="form-control" id="cardname">
+                    </div>
+                    <button type="button" class="btn btn-outline-dark ml-3" id="card_check">Check!</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-3">
+            <h5>Result:</h5>
+            <p id="answer" class="border border-dark p-3 rounded bg-light">Waiting for input...</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <p class="text-center m-3" style="color: gray; opacity: 0.6;">Created in 2020 by Pham Tung Lam. Credit to <a href="https://www.freepik.com/">Freepik</a> for some pictures in my website.</p>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/cardcheck.js"></script>
+</body>
+</html>

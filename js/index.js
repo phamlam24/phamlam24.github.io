@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#left-col").removeClass("invisible")
+        $("#left-col").addClass("animate__animated")
+        $("#left-col").addClass("animate__slideInUp")
+    },300)
+    setTimeout(function(){
+        $("#right-col").removeClass("invisible")
+        $("#right-col").addClass("animate__animated")
+        $("#right-col").addClass("animate__slideInUp")
+    },600)
+});
